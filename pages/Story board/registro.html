@@ -286,7 +286,7 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">                          
-            <div class="col-md-8 grid-margin stretch-card">
+            <div class="col-md-12 grid-margin stretch-card">
               <div class="card">                                  
                 <div class="card-body">                  
                   <div class="form-group" align="center">
@@ -298,16 +298,16 @@
                       <input class="col-md-12" type="text" class="form-control" id="inputGerente" placeholder="Freddie H">
                     </div>
                   </div>
-                  <br>
-                  <div class="form-group">                
+                  <br>                                     
+                  <div id="registro"> <br>
                     <form class="forms-sample">                                                             
                       <div class="form-group">
-                        <label for="inputNombres">Nombres:</label>
+                        <label for="inputNombres">Nombre completo:</label>
                         <input type="text" class="form-control" id="inputNombres">
                       </div>
                       <div class="form-group">
-                        <label for="inputApellidos">Apellidos:</label>
-                        <input type="text" class="form-control" id="inputApellidos">
+                        <label for="inputFecha">Fecha de nacimiento:</label>
+                        <input type="date" class="form-control" id="inputFecha">
                       </div>
                       <div class="form-group">
                         <label for="inputCargo">Cargo:</label>
@@ -318,28 +318,55 @@
                           <option value="cajeroS">Cajero S</option>
                           <option value="cajeroD">Cajero D</option>                        
                         </select> 
+                      </div>                                        
+                      <div class="form-group" align="center">                                        
+                        <button type="submit" class="btn btn-rounded btn-success">Registrar</button>
+                        <button type="reset" class="btn btn-rounded btn-danger">Cancelar</button>                                            
                       </div>
                     </form>
+                  </div> 
+                </div>                                                                     
+              </div>
+            </div>  
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body" align="center">
+                  <div id="listarUsuarios">
+                    <table class="table table-striped table-responsive">
+                      <tr>
+                        <th></th>
+                        <th>Nombre completo</th>                        
+                        <th>Edad</th>
+                        <th>Cargo</th>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces-clipart/pic-1.png" alt="image" />
+                        </td>
+                        <td>Carlos Felipe Montoya</td>
+                        <td>21</td>
+                        <td>Cajero VIP</td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces-clipart/pic-2.png" alt="image" />
+                        </td>
+                        <td>Diana Melissa Millares</td>
+                        <td>22</td>
+                        <td>Cajero D</td>
+                      </tr>
+                    </table>
                   </div>
-                    <div class="form-group" align="center">                                        
-                      <button type="submit" class="btn btn-rounded btn-success">Registrar</button>
-                      <button type="reset" class="btn btn-rounded btn-danger">Cancelar</button>                                            
-                    </div>
-                  </form>
                 </div>
               </div>
-            </div>                                                         
+            </div>
           </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
           <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
-              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
-              <i class="mdi mdi-heart text-danger"></i>
-            </span>
+            
           </div>
         </footer>
         <!-- partial -->
